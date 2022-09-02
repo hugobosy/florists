@@ -11,9 +11,16 @@ const Social = styled.div<Partial<SocialTypes>>`
   color: ${({theme}) => theme.color.primary.dark};
   cursor: pointer;
   transition: .3s;
+
   &:hover {
     color: ${({theme}) => theme.color.secondary.dark};
   }
+  
+  ${({theme}) => theme.media.xl} {
+    width: 25px;
+    height: 25px;
+  }
+
   ${({isBackground}) =>
           isBackground && css`
             background-color: ${({theme}) => theme.color.secondary.dark};
