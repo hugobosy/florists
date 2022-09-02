@@ -1,6 +1,6 @@
 export const font = {
     family: {
-        primary: 'Open-Sans',
+        primary: 'Open Sans',
         secondary: 'Lora',
         accent: 'Allura',
     },
