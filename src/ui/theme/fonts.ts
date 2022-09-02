@@ -12,6 +12,7 @@ export const font = {
         xxs: '1.7rem',
         xs: '1.8rem',
         s: '2.2rem',
+        sm: '2.5rem',
         m: '3.2rem',
         l: '3.5rem',
         xl: '3.8rem',
