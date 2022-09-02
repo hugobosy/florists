@@ -6,6 +6,7 @@ export const font = {
     },
 
     size: {
+        xxxxxs: '1.2rem',
         xxxxs: '1.4rem',
         xxxs: '1.5rem',
         xxs: '1.7rem',
