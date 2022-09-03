@@ -5,6 +5,8 @@ import {Button} from "../../ui/components/button/Button.component";
 import {FaFacebookF} from "react-icons/fa";
 import {Social} from "../../ui/components/social/Social.component";
 import {TitleSection} from "../../ui/components/title-section/TitleSection.component";
+import {HeaderSection} from "../header-section/HeaderSection.component";
+
 
 export const Home = () => (
     <>
@@ -12,6 +14,7 @@ export const Home = () => (
         <Paragraph captionId="Paragraf" color="light" align="center"/>
         <Button captionId="Button"/>
         <Social icon={<FaFacebookF/>} isBackground/>
-        <TitleSection size="large" captionId="Welcome" />
+        <TitleSection size="large" captionId="Welcome" align="center"/>
+        <HeaderSection captionTitle="Tytuł" captionHeader="Nagłówek" size="large" align="center"/>
     </>
 )

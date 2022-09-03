@@ -23,25 +23,39 @@ const sizes = {
 
 }
 
-const TitleSection = styled.p<Partial<TitleSectionTypes>>`
+const aligns = {
+    left: css`
+      justify-content: flex-start;`,
+    center: css`
+      justify-content: center;;`,
+    right: css`
+      justify-content: flex-end;`
+}
+
+const Wrapper = styled.div<Partial<TitleSectionTypes>>`
+  display: flex;
+  ${({align}) => align && aligns[align]};`
+
+const TitleSection = styled.h2<Partial<TitleSectionTypes>>`
   position: relative;
   display: inline-block;
   font-family: ${({theme}) => theme.font.family.accent};
   color: ${({theme}) => theme.color.primary.dark};
   line-height: 1.2;
   letter-spacing: 1px;
-  margin: 0 auto;
   ${({size}) => size && sizes[size]};
   ${({isUnderline}) => isUnderline && css
-          `&::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            background-color: ${({theme}) => theme.color.secondary.dark};
-            width: 100px;
-            height: 4px;
-          }`};
+          `margin-bottom: 50px;
+
+            &::before {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              background-color: ${({theme}) => theme.color.secondary.dark};
+              width: 100px;
+              height: 4px;
+            }`};
   ${({isLine}) => isLine && css`
     padding: 20px 0;
 
@@ -85,4 +99,4 @@ const TitleSection = styled.p<Partial<TitleSectionTypes>>`
   ;`
   }`
 
-export default {TitleSection}
+export default {TitleSection, Wrapper}
