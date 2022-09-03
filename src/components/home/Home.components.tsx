@@ -6,6 +6,7 @@ import {FaFacebookF} from "react-icons/fa";
 import {Social} from "../../ui/components/social/Social.component";
 import {TitleSection} from "../../ui/components/title-section/TitleSection.component";
 import {HeaderSection} from "../header-section/HeaderSection.component";
+import {Link} from "../../ui/components/link/Link.component";
 
 
 export const Home = () => (
@@ -16,5 +17,6 @@ export const Home = () => (
         <Social icon={<FaFacebookF/>} isBackground/>
         <TitleSection size="large" captionId="Welcome" align="center"/>
         <HeaderSection captionTitle="Tytuł" captionHeader="Nagłówek" size="large" align="center"/>
+        <Link captionId="Gallery" href="/gallery"/>
     </>
 )
