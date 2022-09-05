@@ -24,3 +24,7 @@ yarn-error.log*
 # Ignore artifacts:
 build
 coverage
+6
+.husky
+
+.idea
