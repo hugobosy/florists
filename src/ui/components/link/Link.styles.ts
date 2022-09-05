@@ -2,16 +2,17 @@ import styled from "styled-components";
 
 const Link = styled.a`
   padding: 0 20px;
-  font-family: ${({theme}) => theme.font.family.primary};
-  font-size: ${({theme}) => theme.font.size.xxxxs};
+  font-family: ${({ theme }) => theme.font.family.primary};
+  font-size: ${({ theme }) => theme.font.size.xxxxs};
   line-height: 18px;
   text-transform: uppercase;
-  transition: .3s;
+  transition: 0.3s;
 
   a {
     &:hover {
-      color: ${({theme}) => theme.color.secondary.dark}
+      color: ${({ theme }) => theme.color.secondary.dark};
     }
-  }`
+  }
+`;
 
-export default {Link}
+export default { Link };

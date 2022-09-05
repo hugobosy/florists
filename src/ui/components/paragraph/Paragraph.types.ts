@@ -1,7 +1,7 @@
-import {Align, Color} from "../../types/types";
+import { Align, Color } from "../../types/types";
 
 export interface ParagraphTypes {
-    captionId: string;
-    color?: Color;
-    align?: Align;
+  captionId: string;
+  color?: Color;
+  align?: Align;
 }

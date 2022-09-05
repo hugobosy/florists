@@ -1,5 +1,3 @@
-const Gallery = () => (
-    <h1>Galeria</h1>
-)
+const Gallery = () => <h1>Galeria</h1>;
 
-export default Gallery
+export default Gallery;

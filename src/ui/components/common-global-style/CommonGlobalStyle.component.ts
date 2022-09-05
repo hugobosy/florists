@@ -1,4 +1,4 @@
-import {css} from "styled-components";
+import { css } from "styled-components";
 
 export const CommonGlobalStyle = css`
   *,
@@ -17,7 +17,7 @@ export const CommonGlobalStyle = css`
 
   body {
     overflow: hidden;
-    font-family: ${({theme}) => theme.font.family.primary};
+    font-family: ${({ theme }) => theme.font.family.primary};
   }
 
   ul {
@@ -26,5 +26,6 @@ export const CommonGlobalStyle = css`
 
   a {
     text-decoration: none;
-    color: ${({theme}) => theme.color.primary.dark};
-  }`
+    color: ${({ theme }) => theme.color.primary.dark};
+  }
+`;

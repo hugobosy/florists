@@ -1,4 +1,4 @@
 export interface LinkTypes {
-    captionId: string;
-    href: string;
+  captionId: string;
+  href: string;
 }

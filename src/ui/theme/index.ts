@@ -1,9 +1,9 @@
-import {color} from "./colors";
-import {media} from "./media";
-import {font} from "./fonts";
+import { color } from "./colors";
+import { media } from "./media";
+import { font } from "./fonts";
 
 export const theme = {
-    color,
-    media,
-    font,
-}
+  color,
+  media,
+  font,
+};

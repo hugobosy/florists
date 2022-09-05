@@ -1,6 +1,6 @@
-import {Align} from "../../types/types";
+import { Align } from "../../types/types";
 
 export interface ButtonTypes {
-    captionId: string;
-    align?: Align;
+  captionId: string;
+  align?: Align;
 }

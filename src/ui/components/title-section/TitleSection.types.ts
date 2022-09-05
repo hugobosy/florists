@@ -1,9 +1,9 @@
-import {Align, Size} from "../../types/types";
+import { Align, Size } from "../../types/types";
 
 export interface TitleSectionTypes {
-    captionId: string;
-    size: Size;
-    isUnderline?: boolean;
-    isLine?: boolean;
-    align?: Align;
+  captionId: string;
+  size: Size;
+  isUnderline?: boolean;
+  isLine?: boolean;
+  align?: Align;
 }
