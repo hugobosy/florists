@@ -8,10 +8,8 @@ const Link = styled.a`
   text-transform: uppercase;
   transition: 0.3s;
 
-  a {
-    &:hover {
-      color: ${({ theme }) => theme.color.secondary.dark};
-    }
+  &:hover {
+    color: ${({ theme }) => theme.color.secondary.dark};
   }
 `;
 

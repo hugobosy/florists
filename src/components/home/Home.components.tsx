@@ -7,6 +7,7 @@ import { Social } from "../../ui/components/social/Social.component";
 import { TitleSection } from "../../ui/components/title-section/TitleSection.component";
 import { HeaderSection } from "../header-section/HeaderSection.component";
 import { Link } from "../../ui/components/link/Link.component";
+import { Navi } from "../navi/Navi.component";
 
 export const Home = () => (
   <>
@@ -22,5 +23,6 @@ export const Home = () => (
       align="center"
     />
     <Link captionId="Gallery" href="/gallery" />
+      <Navi/>
   </>
 );
