@@ -1,10 +1,16 @@
-import { Link } from "../../ui/components/link/Link.component";
+import { Links } from "./links/Links.component";
+import S from './Navi.styles';
+import { Burger } from "../../ui/components/burger/Burger.component";
 
 export const Navi = () => (
   <>
-    <Link captionId="Oferta" href="/oferta" />
-    <Link captionId="Galeria" href="/galeria" />
-    <Link captionId="Cennik" href="/cennik" />
-    <Link captionId="Kontakt" href="/kontakt" />
+    <S.Mobile>
+      <Burger/>
+      <Links display="mobile"/>
+    </S.Mobile>
+    <S.Desktop>
+      <Links display="desktop"/>
+    </S.Desktop>
+
   </>
 );
