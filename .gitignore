@@ -25,6 +25,6 @@ yarn-error.log*
 build
 coverage
 6
-.husky
+/.husky
 
-.idea
+/.idea
