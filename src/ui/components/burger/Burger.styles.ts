@@ -11,6 +11,7 @@ const Burger = styled.div`
   margin: 0 auto;
   background-color: ${({ theme }) => theme.color.secondary.dark};
   cursor: pointer;
+  z-index: 99;
   
   hr {
     border-radius: 2px;

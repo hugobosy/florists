@@ -3,32 +3,38 @@ import { LinksTypes } from "./Links.types";
 
 const displays = {
   mobile: css`
+    display: flex;
     flex-direction: column;
     padding: 16px 0;
     margin: 0 24px;
-    background-color: ${({theme}) => theme.color.light};
-    border: 2px solid ${({theme}) => theme.color.secondary.dark};
+    background-color: ${({ theme }) => theme.color.light};
+    border: 2px solid ${({ theme }) => theme.color.secondary.dark};
     row-gap: 16px;
-    translate: 0 -100%;
+    translate: 0 -150%;
     opacity: 0;
-    
-    ${({theme}) => theme.media.md} {
+    transition: .3s;
+
+    ${({ theme }) => theme.media.md} {
       display: none;
     }
   `,
 
   desktop: css`
     display: none;
-    
-    ${({theme}) => theme.media.md} {
+
+    ${({ theme }) => theme.media.md} {
       display: flex;
     }
   `
 };
 
 const List = styled.ul<Partial<LinksTypes>>`
-  display: flex;
+  
   ${({ display }) => display && displays[display]}
+  ${({ isVisibility }) => isVisibility &&
+          css`translate: 0 0;
+            opacity: 1;
+          `}
 `;
 const ListItem = styled.li`
 `;

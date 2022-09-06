@@ -1,16 +1,20 @@
 import { Links } from "./links/Links.component";
-import S from './Navi.styles';
+import S from "./Navi.styles";
 import { Burger } from "../../ui/components/burger/Burger.component";
+import { useState } from "react";
 
-export const Navi = () => (
-  <>
-    <S.Mobile>
-      <Burger/>
-      <Links display="mobile"/>
-    </S.Mobile>
-    <S.Desktop>
-      <Links display="desktop"/>
-    </S.Desktop>
+export const Navi = () => {
+  const [isVisibility, setIsVisibility] = useState(true);
+  return (
+    <>
+      <S.Mobile>
+        <Burger setIsVisibility={setIsVisibility} isVisibility={isVisibility}/>
+        <Links display="mobile" isVisibility={isVisibility} />
+      </S.Mobile>
+      <S.Desktop>
+        <Links display="desktop" />
+      </S.Desktop>
 
-  </>
-);
+    </>
+  );
+};
