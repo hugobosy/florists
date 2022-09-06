@@ -1,8 +1,8 @@
 import React from "react";
-import { Navi } from "../navi/Navi.component";
+import { HeaderHero } from "../header-hero/HeaderHero.component";
 
 export const Home = () => (
   <>
-    <Navi />
+    <HeaderHero/>
   </>
 );
