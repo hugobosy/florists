@@ -1,8 +1,8 @@
 import React from "react";
-import { HeaderHero } from "../header-hero/HeaderHero.component";
+import { Hero } from "../../modules/hero/Hero.component";
 
 export const Home = () => (
   <>
-    <HeaderHero/>
+    <Hero/>
   </>
 );

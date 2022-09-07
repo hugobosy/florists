@@ -16,6 +16,7 @@ const displays = {
     translate: 0 -150%;
     opacity: 0;
     transition: .3s;
+    z-index: 999;
 
     ${({ theme }) => theme.media.md} {
       display: none;

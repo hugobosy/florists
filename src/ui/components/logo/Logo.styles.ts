@@ -8,6 +8,7 @@ const Wrapper = styled.div `
 
 const Logo = styled.img`
   width: 100px;
+ filter: drop-shadow(0 0 .01em ${({theme}) => theme.color.secondary.dark});
 `;
 
 export default { Logo, Wrapper };

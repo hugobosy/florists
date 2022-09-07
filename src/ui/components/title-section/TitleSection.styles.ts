@@ -22,7 +22,7 @@ const sizes = {
     ${({ theme }) => theme.media.lg} {
       font-size: ${({ theme }) => theme.font.size.xxxxl};
     }
-  `,
+  `
 };
 
 const aligns = {
@@ -30,11 +30,11 @@ const aligns = {
     justify-content: flex-start;
   `,
   center: css`
-    justify-content: center; ;
+    justify-content: center;;
   `,
   right: css`
     justify-content: flex-end;
-  `,
+  `
 };
 
 const Wrapper = styled.div<Partial<TitleSectionTypes>>`
@@ -51,63 +51,66 @@ const TitleSection = styled.h2<Partial<TitleSectionTypes>>`
   letter-spacing: 1px;
   ${({ size }) => size && sizes[size]};
   ${({ isUnderline }) =>
-    isUnderline &&
-    css`
-      margin-bottom: 50px;
+          isUnderline &&
+          css`
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              background-color: ${({ theme }) => theme.color.secondary.dark};
+              width: 100px;
+              height: 4px;
+            }
 
-      &::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background-color: ${({ theme }) => theme.color.secondary.dark};
-        width: 100px;
-        height: 4px;
-      }
-    `};
+            ${({ theme }) => theme.media.md} {
+              margin-bottom: 50px;
+            }
+          `};
   ${({ isLine }) =>
-    isLine &&
-    css`
-      padding: 20px 0;
+          isLine &&
+          css`
+            padding: 20px 0;
 
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, 0);
-        width: 70px;
-        height: 4px;
-        background-color: ${({ theme }) => theme.color.secondary.dark};
-      }
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 50%;
+              transform: translate(-50%, 0);
+              width: 70px;
+              height: 4px;
+              background-color: ${({ theme }) => theme.color.secondary.dark};
+            }
 
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        right: 50%;
-        transform: translate(50%, 0);
-        width: 70px;
-        height: 4px;
-        background-color: ${({ theme }) => theme.color.secondary.dark};
-      }
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              right: 50%;
+              transform: translate(50%, 0);
+              width: 70px;
+              height: 4px;
+              background-color: ${({ theme }) => theme.color.secondary.dark};
+            }
 
-      ${({ theme }) => theme.media.md} {
-        padding: 0 20px;
+            ${({ theme }) => theme.media.md} {
+              padding: 0 20px;
 
-        &::before {
-          top: 50%;
-          left: 0;
-          transform: translate(-100%, -50%);
-        }
+              &::before {
+                top: 50%;
+                left: 0;
+                transform: translate(-100%, -50%);
+              }
 
-        &::after {
-          top: 50%;
-          right: 0;
-          transform: translate(100%, -50%);
-        }
-      } ;
-    `}
+              &::after {
+                top: 50%;
+                right: 0;
+                transform: translate(100%, -50%);
+              }
+            }
+          ;
+          `}
 `;
 
 export default { TitleSection, Wrapper };
