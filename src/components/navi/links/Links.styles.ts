@@ -3,8 +3,11 @@ import { LinksTypes } from "./Links.types";
 
 const displays = {
   mobile: css`
+    position: absolute;
+    left: -150px;
     display: flex;
     flex-direction: column;
+    width: 300px;
     padding: 16px 0;
     margin: 0 24px;
     background-color: ${({ theme }) => theme.color.light};

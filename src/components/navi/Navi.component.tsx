@@ -4,7 +4,7 @@ import { Burger } from "../../ui/components/burger/Burger.component";
 import { useState } from "react";
 
 export const Navi = () => {
-  const [isVisibility, setIsVisibility] = useState(true);
+  const [isVisibility, setIsVisibility] = useState(false);
   return (
     <>
       <S.Mobile>
