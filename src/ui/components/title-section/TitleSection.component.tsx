@@ -7,9 +7,10 @@ export const TitleSection: React.FC<TitleSectionTypes> = ({
   isUnderline,
   isLine,
   align,
+  color,
 }) => (
   <S.Wrapper align={align}>
-    <S.TitleSection size={size} isUnderline={isUnderline} isLine={isLine}>
+    <S.TitleSection size={size} isUnderline={isUnderline} isLine={isLine} color={color}>
       {captionId}
     </S.TitleSection>
   </S.Wrapper>

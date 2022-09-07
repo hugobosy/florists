@@ -16,7 +16,7 @@ export const CommonGlobalStyle = css`
   }
 
   body {
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: ${({ theme }) => theme.font.family.primary};
   }
 

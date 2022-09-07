@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   justify-content: space-around;
   height: 300px;
   width: 100vw;
-  
+  z-index: 999;
 
   ${({ theme }) => theme.media.md} {
     position: fixed;
