@@ -27,15 +27,15 @@ const Content = styled.div`
   margin-top: 150px;
   padding-left: 20px;
   row-gap: 10px;
-  
-  ${({theme}) => theme.media.md} {
+
+  ${({ theme }) => theme.media.md} {
     margin-top: 50px;
     width: 50%;
     justify-content: center;
     translate: 130px 150%;
   }
 
-  ${({theme}) => theme.media.lg} {
+  ${({ theme }) => theme.media.lg} {
     width: 30%;
     row-gap: 30px;
   }
