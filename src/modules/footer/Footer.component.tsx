@@ -16,7 +16,6 @@ export const Footer = () => (
             captionId="We understand your day is very special, and we offer a very personalized service for your most important event. We custom make beautiful wedding flowers."
             color="extra-light" />
         </S.Column>
-
         <S.Column>
           <Header captionId="Information" color="extra-light" />
           <S.InfoWrapper>
@@ -38,7 +37,6 @@ export const Footer = () => (
               color="extra-light" />
           </S.InfoWrapper>
         </S.Column>
-
         <S.Column>
           <Header captionId="Social" color="extra-light" />
           <S.Socials>
