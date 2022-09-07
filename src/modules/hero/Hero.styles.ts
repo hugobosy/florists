@@ -8,14 +8,15 @@ const Wrapper = styled.div`
   background-position: center;
   padding: 0 0 20px;
 
-  ${({ theme }) => theme.media.md} {
+  ${({ theme }) => theme.media.sm} {
     padding-top: 20px;
     min-height: 85vh;
-  }
-
-  ${({ theme }) => theme.media.xl} {
+  }  
+  
+  ${({ theme }) => theme.media.md} {
     min-height: 100vh;
   }
+  
 `;
 
 const Content = styled.div`

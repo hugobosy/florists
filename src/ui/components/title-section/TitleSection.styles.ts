@@ -1,6 +1,16 @@
 import styled, { css } from "styled-components";
 import { TitleSectionTypes } from "./TitleSection.types";
 
+const colors = {
+  default: css`
+    color: ${({ theme }) => theme.color.dark};`,
+  light: css`
+    color: ${({ theme }) => theme.color.light};`,
+  "extra-light": css`
+    color: ${({ theme }) => theme.color.light};
+  `
+};
+
 const sizes = {
   small: css`
     font-size: ${({ theme }) => theme.font.size.sm};
@@ -54,6 +64,7 @@ const TitleSection = styled.h2<Partial<TitleSectionTypes>>`
   line-height: 1.2;
   letter-spacing: 1px;
   ${({ size }) => size && sizes[size]};
+  ${({ color }) => color && colors[color]};
   ${({ isUnderline }) =>
           isUnderline &&
           css`

@@ -8,6 +8,9 @@ const colors = {
   light: css`
     color: ${({ theme }) => theme.color.primary.light};
   `,
+  "extra-light": css`
+    color: ${({ theme }) => theme.color.light};
+  `
 };
 
 const aligns = {
@@ -19,7 +22,7 @@ const aligns = {
   `,
   right: css`
     text-align: right;
-  `,
+  `
 };
 
 const Paragraph = styled.p<Partial<ParagraphTypes>>`
