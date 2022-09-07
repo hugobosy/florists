@@ -2,7 +2,6 @@ import styled, { css } from "styled-components";
 import { SocialTypes } from "./Social.types";
 
 
-
 const Social = styled.div<Partial<SocialTypes>>`
   display: flex;
   align-items: center;
@@ -23,16 +22,27 @@ const Social = styled.div<Partial<SocialTypes>>`
     height: 25px;
   }
 
-  ${({ isBackground }) =>
-    isBackground &&
-    css`
-      background-color: ${({ theme }) => theme.color.secondary.dark};
-      color: ${({ theme }) => theme.color.light};
+  ${({ isFooter }) =>
+          isFooter &&
+          css`
+            color: ${({ theme }) => theme.color.secondary.dark};
 
-      &:hover {
-        color: ${({ theme }) => theme.color.primary.dark};
-      }
-    `}
+            &:hover {
+              color: ${({ theme }) => theme.color.light};
+            }
+          `}
+
+  ${({ isBackground }) =>
+          isBackground &&
+          css`
+            background-color: ${({ theme }) => theme.color.secondary.dark};
+            color: ${({ theme }) => theme.color.light};
+
+            &:hover {
+              color: ${({ theme }) => theme.color.primary.dark};
+            }
+          `}
+
 `;
 
 export default { Social };

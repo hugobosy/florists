@@ -11,8 +11,8 @@ const GridWrapper = styled.div`
   justify-items: center;
   padding: 100px 20px;
   gap: 100px;
-  
-  ${({theme}) => theme.media.md} {
+
+  ${({ theme }) => theme.media.md} {
     grid-template-columns: repeat(3, 1fr);
   }
 `;
@@ -30,16 +30,20 @@ const InfoWrapper = styled.div`
   align-items: center
 `;
 
+const Socials = styled.div`
+  display: flex;
+  column-gap: 10px;`;
+
 const Map = styled(BiMap)`
   color: ${({ theme }) => theme.color.secondary.dark};
-  font-size: ${({ theme }) => theme.font.size.l};`;
+`;
 
 const Envelope = styled(BiEnvelope)`
   color: ${({ theme }) => theme.color.secondary.dark};
-  font-size: ${({ theme }) => theme.font.size.l};`;
+`;
 
 const Phone = styled(BiPhone)`
   color: ${({ theme }) => theme.color.secondary.dark};
-  font-size: ${({ theme }) => theme.font.size.l};`;
+`;
 
-export default { GridWrapper, Column, Wrapper, InfoWrapper, Map, Envelope, Phone };
+export default { GridWrapper, Column, Wrapper, InfoWrapper, Map, Envelope, Phone, Socials };
