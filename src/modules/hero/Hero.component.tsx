@@ -4,7 +4,6 @@ import { TitleSection } from "../../ui/components/title-section/TitleSection.com
 import { Header } from "../../ui/components/header/Header.component";
 import { Paragraph } from "../../ui/components/paragraph/Paragraph.component";
 import { Button } from "../../ui/components/button/Button.component";
-import { BackImg } from "../../ui/components/back-img/BackImg.component";
 
 export const Hero = () => (
   <S.Wrapper>
