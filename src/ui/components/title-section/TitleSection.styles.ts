@@ -19,6 +19,10 @@ const sizes = {
   large: css`
     font-size: ${({ theme }) => theme.font.size.m};
 
+    ${({ theme }) => theme.media.md} {
+      font-size: ${({ theme }) => theme.font.size.xxl};
+    }
+
     ${({ theme }) => theme.media.lg} {
       font-size: ${({ theme }) => theme.font.size.xxxxl};
     }
