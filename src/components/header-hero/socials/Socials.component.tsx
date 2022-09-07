@@ -4,10 +4,10 @@ import S from "./Socials.styles";
 
 export const Socials = () => (
   <S.Wrapper>
-    <Social icon={<FaTwitter />} isBackground />
-    <Social icon={<FaFacebookF />} isBackground />
-    <Social icon={<FaPinterestP />} isBackground />
-    <Social icon={<FaInstagramSquare />} isBackground />
-    <Social icon={<FaGooglePlusG />} isBackground />
+    <Social icon={<FaTwitter size={15} />} isBackground />
+    <Social icon={<FaFacebookF size={15} />} isBackground />
+    <Social icon={<FaPinterestP size={15} />} isBackground />
+    <Social icon={<FaInstagramSquare size={15} />} isBackground />
+    <Social icon={<FaGooglePlusG size={15} />} isBackground />
   </S.Wrapper>
 );

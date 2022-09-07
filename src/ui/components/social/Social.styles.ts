@@ -1,12 +1,14 @@
 import styled, { css } from "styled-components";
 import { SocialTypes } from "./Social.types";
 
+
+
 const Social = styled.div<Partial<SocialTypes>>`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   color: ${({ theme }) => theme.color.primary.dark};
   cursor: pointer;
