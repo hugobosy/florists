@@ -7,7 +7,7 @@ const Parallax = styled.div<Partial<ParallaxTypes>>`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  ${({image}) => image && css `background-image: url(${image})`}
+  ${({ image }) => image && css`background-image: url(${image})`}
 `;
 
 export default { Parallax };
