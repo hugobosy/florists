@@ -28,6 +28,7 @@ const Content = styled.div`
   margin-top: 150px;
   padding-left: 20px;
   row-gap: 10px;
+  filter: drop-shadow(0 0 0 #000);
 
   ${({ theme }) => theme.media.md} {
     margin-top: 50px;
