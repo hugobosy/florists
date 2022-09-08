@@ -4,7 +4,7 @@ import S from "./Gifts.styles";
 import { Paragraph } from "../../ui/components/paragraph/Paragraph.component";
 import { BackImg } from "../../ui/components/back-img/BackImg.component";
 import { ListItemSection } from "../../components/list-item-section/ListItemSection.component";
-import image from './img/bucket.jpg';
+import image from "./img/bucket.jpg";
 
 export const Gifts = () => (
   <S.Wrapper>

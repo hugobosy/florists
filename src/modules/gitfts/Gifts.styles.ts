@@ -33,11 +33,12 @@ const BackImgWrapper = styled.div`
   bottom: 120px;
   left: 0;
   z-index: -1;
-  
-  ${({theme}) => theme.media.md} {
+
+  ${({ theme }) => theme.media.md} {
     bottom: 250px;
-  }  
-  ${({theme}) => theme.media.xl} {
+  }
+
+  ${({ theme }) => theme.media.xl} {
     bottom: 350px;
   }
 `;
