@@ -26,6 +26,7 @@ const aligns = {
 };
 
 const Paragraph = styled.p<Partial<ParagraphTypes>>`
+  padding: 20px 0;
   line-height: 1.8;
   font-family: ${({ theme }) => theme.font.family.primary};
   font-size: ${({ theme }) => theme.font.size.xxxxs};
@@ -33,7 +34,7 @@ const Paragraph = styled.p<Partial<ParagraphTypes>>`
   ${({ align }) => align && aligns[align]};
 
   ${({ theme }) => theme.media.md} {
-    font-size: ${({ theme }) => theme.font.size.xxxs};
+    font-size: ${({ theme }) => theme.font.size.xxs};
   }
 `;
 
