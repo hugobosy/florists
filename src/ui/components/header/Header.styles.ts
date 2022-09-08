@@ -28,12 +28,12 @@ const aligns = {
 const Header = styled.h1<Partial<HeaderTypes>>`
   font-family: ${({ theme }) => theme.font.family.secondary};
   text-transform: uppercase;
-  font-size: ${({ theme }) => theme.font.size.xs};
+  font-size: ${({ theme }) => theme.font.size.s};
   ${({ color }) => color && colors[color]};
   ${({ align }) => align && aligns[align]};
 
   ${({ theme }) => theme.media.sm} {
-    font-size: ${({ theme }) => theme.font.size.s};
+    font-size: ${({ theme }) => theme.font.size.m};
   }
 
   ${({ theme }) => theme.media.lg} {
