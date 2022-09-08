@@ -14,7 +14,8 @@ export const Gifts = () => (
           <HeaderSection captionTitle="Wonderful Gifts" captionHeader="From Florenso" size="medium" align="left" />
           <Paragraph
             captionId="Extensively delivered to our clients on time, Flower Decoration services are rendered by most skillful and experienced professionals of our team."
-            color="light" />
+            color="light"
+            padding={20} />
           <ul>
             <ListItemSection captionId="Bouquets & Compositions" />
             <ListItemSection captionId="Bouquets & Compositions" />

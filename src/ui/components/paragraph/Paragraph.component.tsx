@@ -5,8 +5,9 @@ export const Paragraph: React.FC<ParagraphTypes> = ({
   captionId,
   align,
   color,
+  padding,
 }) => (
-  <S.Paragraph color={color} align={align}>
+  <S.Paragraph color={color} align={align} padding={padding}>
     {captionId}
   </S.Paragraph>
 );

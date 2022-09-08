@@ -26,12 +26,12 @@ const aligns = {
 };
 
 const Paragraph = styled.p<Partial<ParagraphTypes>>`
-  padding: 20px 0;
   line-height: 1.8;
   font-family: ${({ theme }) => theme.font.family.primary};
   font-size: ${({ theme }) => theme.font.size.xxxxs};
   ${({ color }) => color && colors[color]};
   ${({ align }) => align && aligns[align]};
+  ${({ padding }) => padding && css`padding: ${padding}px 0`};
 
   ${({ theme }) => theme.media.md} {
     font-size: ${({ theme }) => theme.font.size.xxs};

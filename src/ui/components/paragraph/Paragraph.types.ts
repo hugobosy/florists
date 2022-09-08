@@ -4,4 +4,5 @@ export interface ParagraphTypes {
   captionId: string;
   color?: Color;
   align?: Align;
+  padding?: number;
 }

@@ -5,8 +5,8 @@ import { Gifts } from "../../modules/gitfts/Gifts.component";
 
 export const Home = () => (
   <>
-    <Hero/>
-    <Gifts/>
-    <Footer/>
+    <Hero />
+    <Gifts />
+    <Footer />
   </>
 );
