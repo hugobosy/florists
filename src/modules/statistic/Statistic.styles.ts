@@ -10,7 +10,6 @@ const Statistic = styled.div`
   flex-direction: column;
   padding: 50px 0;
   gap: 40px;
-  //border: 2px dashed ${({ theme }) => theme.color.light};
 
   ${({ theme }) => theme.media.md} {
     flex-direction: row;
