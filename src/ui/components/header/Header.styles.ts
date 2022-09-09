@@ -1,6 +1,34 @@
 import styled, { css } from "styled-components";
 import { HeaderTypes } from "./Header.types";
 
+const sizes = {
+  small: css`
+    font-size: ${({ theme }) => theme.font.size.sm};
+
+    ${({ theme }) => theme.media.lg} {
+      font-size: ${({ theme }) => theme.font.size.m};
+    }
+  `,
+  medium: css`
+    font-size: ${({ theme }) => theme.font.size.sm};
+
+    ${({ theme }) => theme.media.lg} {
+      font-size: ${({ theme }) => theme.font.size.xxl};
+    }
+  `,
+  large: css`
+    font-size: ${({ theme }) => theme.font.size.xl};
+
+    ${({ theme }) => theme.media.md} {
+      font-size: ${({ theme }) => theme.font.size.xxl};
+    }
+
+    ${({ theme }) => theme.media.lg} {
+      font-size: ${({ theme }) => theme.font.size.xxxl};
+    }
+  `
+};
+
 const colors = {
   default: css`
     color: ${({ theme }) => theme.color.primary.dark};
@@ -22,23 +50,15 @@ const aligns = {
   `,
   right: css`
     text-align: right;
-  `,
+  `
 };
 
 const Header = styled.h1<Partial<HeaderTypes>>`
   font-family: ${({ theme }) => theme.font.family.secondary};
   text-transform: uppercase;
-  font-size: ${({ theme }) => theme.font.size.s};
   ${({ color }) => color && colors[color]};
   ${({ align }) => align && aligns[align]};
-
-  ${({ theme }) => theme.media.sm} {
-    font-size: ${({ theme }) => theme.font.size.m};
-  }
-
-  ${({ theme }) => theme.media.lg} {
-    font-size: ${({ theme }) => theme.font.size.l};
-  }
+  ${({ size }) => size && sizes[size]};
 `;
 
 export default { Header };

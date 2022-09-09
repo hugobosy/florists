@@ -16,14 +16,14 @@ const sizes = {
     font-size: ${({ theme }) => theme.font.size.sm};
 
     ${({ theme }) => theme.media.lg} {
-      font-size: ${({ theme }) => theme.font.size.m};
+      font-size: ${({ theme }) => theme.font.size.l};
     }
   `,
   medium: css`
     font-size: ${({ theme }) => theme.font.size.sm};
 
     ${({ theme }) => theme.media.lg} {
-      font-size: ${({ theme }) => theme.font.size.xl};
+      font-size: ${({ theme }) => theme.font.size.xxl};
     }
   `,
   large: css`
