@@ -19,6 +19,6 @@ export const HeaderSection: React.FC<HeaderSectionTypes> = ({
       isUnderline={isUnderline}
       align={align}
     />
-    <Header captionId={captionHeader} align={align} color={color} size="medium"/>
+    <Header captionId={captionHeader} align={align} color={color} size={size} />
   </div>
 );
