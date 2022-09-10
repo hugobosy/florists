@@ -9,8 +9,8 @@ export const Home = () => (
   <>
     <Hero />
     <Gifts />
-    <Statistic/>
-    <HardWork/>
+    <Statistic />
+    <HardWork />
     <Footer />
   </>
 );

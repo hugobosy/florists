@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Paragraph } from "../../ui/components/paragraph/Paragraph.component";
 
 const Wrapper = styled.div`
   display: flex;
