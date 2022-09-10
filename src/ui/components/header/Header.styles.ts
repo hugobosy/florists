@@ -4,16 +4,20 @@ import { HeaderTypes } from "./Header.types";
 const sizes = {
   small: css`
     font-size: ${({ theme }) => theme.font.size.sm};
+    padding: 10px 0;
 
     ${({ theme }) => theme.media.lg} {
       font-size: ${({ theme }) => theme.font.size.m};
+      padding: 0;
     }
   `,
   medium: css`
     font-size: ${({ theme }) => theme.font.size.sm};
+    padding: 15px 0;
 
     ${({ theme }) => theme.media.lg} {
       font-size: ${({ theme }) => theme.font.size.xxl};
+      padding: 0;
     }
   `,
   large: css`
