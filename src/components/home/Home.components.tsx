@@ -4,6 +4,7 @@ import { Footer } from "../../modules/footer/Footer.component";
 import { Gifts } from "../../modules/gitfts/Gifts.component";
 import { Statistic } from "../../modules/statistic/Statistic.component";
 import { HardWork } from "../../modules/hard-work/HardWork.component";
+import { Gallery } from "../../modules/gallery/Gallery.component";
 
 export const Home = () => (
   <>
@@ -11,6 +12,7 @@ export const Home = () => (
     <Gifts />
     <Statistic />
     <HardWork />
+    <Gallery />
     <Footer />
   </>
 );
