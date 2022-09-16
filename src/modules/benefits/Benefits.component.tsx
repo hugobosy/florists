@@ -14,7 +14,6 @@ export const Benefits = () => (
           <BenefitCard icon={item.icon} captionHeader={item.title} captionParagraph={item.text} />
         ))}
 
-
       </S.Benefits>
     </Container>
   </S.Wrapper>

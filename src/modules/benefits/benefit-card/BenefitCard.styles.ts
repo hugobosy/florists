@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 const Icon = styled.div`
   display: flex;
   justify-content: center;
-  color: ${({theme}) => theme.color.secondary.dark}
+  color: ${({ theme }) => theme.color.secondary.dark}
 `;
 
 export default { Wrapper, Icon };

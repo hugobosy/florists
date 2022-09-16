@@ -13,10 +13,10 @@ const Benefits = styled.div`
   flex-direction: column;
   row-gap: 30px;
   padding-top: 60px;
-  
-  ${({theme}) => theme.media.md} {
+
+  ${({ theme }) => theme.media.md} {
     flex-direction: row;
     padding-top: 80px;
   }
-`
+`;
 export default { Wrapper, Benefits };
