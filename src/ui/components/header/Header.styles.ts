@@ -2,6 +2,10 @@ import styled, { css } from "styled-components";
 import { HeaderTypes } from "./Header.types";
 
 const sizes = {
+  'extra-small': css `
+    font-size: ${({theme}) => theme.font.size.xs};
+    padding: 10px 0;
+  `,
   small: css`
     font-size: ${({ theme }) => theme.font.size.sm};
     padding: 10px 0;

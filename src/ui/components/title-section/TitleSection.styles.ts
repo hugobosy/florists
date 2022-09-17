@@ -12,6 +12,10 @@ const colors = {
 };
 
 const sizes = {
+  "extra-small": css`
+    font-size: ${({ theme }) => theme.font.size.xs};
+    padding: 10px 0;
+  `,
   small: css`
     font-size: ${({ theme }) => theme.font.size.sm};
 

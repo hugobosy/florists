@@ -6,7 +6,7 @@ import { BenefitCardTypes } from "./BenefitCard.types";
 export const BenefitCard: React.FC<BenefitCardTypes> = ({ icon, captionHeader, captionParagraph }) => (
   <S.Wrapper>
     <S.Icon>{icon}</S.Icon>
-    <Header captionId={captionHeader} align="center" size="small" />
+    <Header captionId={captionHeader} align="center" size="extra-small" />
     <Paragraph captionId={captionParagraph} color="light" align="center" />
   </S.Wrapper>
 );
