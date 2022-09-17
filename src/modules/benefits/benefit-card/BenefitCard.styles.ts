@@ -5,6 +5,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   row-gap: 20px;
   width: 100%;
+  padding: 0 30px;
 `;
 
 const Icon = styled.div`
