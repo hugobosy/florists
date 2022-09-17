@@ -10,7 +10,7 @@ const aligns = {
   `,
   right: css`
     text-align: right;
-  `,
+  `
 };
 
 const Button = styled.button<Partial<ButtonTypes>>`

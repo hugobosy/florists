@@ -10,4 +10,5 @@ export const color = {
     light: "#fff0e9",
   },
   other: "#9f3768",
+  gray: "#cfcfcf",
 };

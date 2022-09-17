@@ -6,6 +6,7 @@ import { Statistic } from "../../modules/statistic/Statistic.component";
 import { HardWork } from "../../modules/hard-work/HardWork.component";
 import { Gallery } from "../../modules/gallery/Gallery.component";
 import { Benefits } from "../../modules/benefits/Benefits.component";
+import { Subscribe } from "../../modules/subscribe/Subscribe.component";
 
 export const Home = () => (
   <>
@@ -15,6 +16,7 @@ export const Home = () => (
     <HardWork />
     <Gallery />
     <Benefits />
+    <Subscribe />
     <Footer />
   </>
 );

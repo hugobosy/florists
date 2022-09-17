@@ -10,10 +10,10 @@ export const Hero = () => (
       <HeaderHero />
       <S.Content>
         <TitleSection captionId="Welcome" size="large" isUnderline />
-        <Header captionId="Inspired by the beauty of nature" size="large"/>
+        <Header captionId="Inspired by the beauty of nature" size="large" />
         <Paragraph
           captionId="You can easily transform your home interior and create an amazingly bright and unforgettable atmosphere of colorful greenery" />
-        <Button captionId="Call2Action" align="left" />
+        <Button captionId="Call2Action" align="center" />
       </S.Content>
   </S.Wrapper>
 );
