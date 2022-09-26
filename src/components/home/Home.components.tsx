@@ -7,6 +7,7 @@ import { HardWork } from "../../modules/hard-work/HardWork.component";
 import { Gallery } from "../../modules/gallery/Gallery.component";
 import { Benefits } from "../../modules/benefits/Benefits.component";
 import { Subscribe } from "../../modules/subscribe/Subscribe.component";
+import { Florist } from "../../modules/florist/Florist.component";
 
 export const Home = () => (
   <>
@@ -17,6 +18,7 @@ export const Home = () => (
     <Gallery />
     <Benefits />
     <Subscribe />
+    <Florist />
     <Footer />
   </>
 );
