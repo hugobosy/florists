@@ -8,6 +8,7 @@ import { Gallery } from "../../modules/gallery/Gallery.component";
 import { Benefits } from "../../modules/benefits/Benefits.component";
 import { Subscribe } from "../../modules/subscribe/Subscribe.component";
 import { Florist } from "../../modules/florist/Florist.component";
+import { Pricing } from "../../modules/pricing/Pricing.component";
 
 export const Home = () => (
   <>
@@ -19,6 +20,7 @@ export const Home = () => (
     <Benefits />
     <Subscribe />
     <Florist />
+    <Pricing />
     <Footer />
   </>
 );

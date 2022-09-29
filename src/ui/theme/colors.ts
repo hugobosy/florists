@@ -7,6 +7,7 @@ export const color = {
   },
   secondary: {
     dark: "#c04a81",
+    darkOpacity: "rgba(192, 74, 129, .9)",
     light: "#fff0e9",
   },
   other: "#9f3768",
