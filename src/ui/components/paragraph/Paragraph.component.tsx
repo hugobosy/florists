@@ -6,8 +6,10 @@ export const Paragraph: React.FC<ParagraphTypes> = ({
   align,
   color,
   padding,
+  textTransform,
+  size
 }) => (
-  <S.Paragraph color={color} align={align} padding={padding}>
+  <S.Paragraph color={color} align={align} padding={padding} textTransform={textTransform} size={size}>
     {captionId}
   </S.Paragraph>
 );

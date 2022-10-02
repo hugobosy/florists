@@ -13,10 +13,12 @@ export const PricingCard: React.FC<PricingCardTypes> = ({ price, title, text }) 
       </S.Price>
       <S.Description>
         <S.Title>
-          <Paragraph captionId={title} color="default" align="center" />
+          <Paragraph captionId={title} color="default" align="center" size="medium" textTransform />
         </S.Title>
         <S.Text>
-          {text}
+          <ul>
+            {text.split(',').map(el => <li>{el}</li>)}
+          </ul>
         </S.Text>
         <Button captionId="Buy Now" align="center" />
       </S.Description>
