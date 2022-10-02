@@ -1,12 +1,14 @@
 export const color = {
   dark: "#000",
   light: "#fff",
+  lightOpacity: "rgba(255,255,255,.9)",
   primary: {
     dark: "#070707",
     light: "#959595",
   },
   secondary: {
     dark: "#c04a81",
+    darkOpacity: "rgba(192, 74, 129, .9)",
     light: "#fff0e9",
   },
   other: "#9f3768",
