@@ -4,9 +4,11 @@ import { ParallaxTypes } from "./Parallax.types";
 const Parallax = styled.div<Partial<ParallaxTypes>>`
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 300px;
+  padding: 30px;
   ${({ image }) => image && css`
     background: url(${image}) no-repeat fixed center;
     background-size: cover;
@@ -24,6 +26,8 @@ const Parallax = styled.div<Partial<ParallaxTypes>>`
       z-index: 0;
     }
   `}
+
+  ${({ isTestimonials }) => isTestimonials && css`display: block`};
 `;
 
 export default { Parallax };

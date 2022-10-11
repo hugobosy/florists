@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-const Wrapper = styled.div`
+const Header = styled.header `
+  z-index: 99;
+`
 
-`;
-
-export default { Wrapper };
+export default { Header };

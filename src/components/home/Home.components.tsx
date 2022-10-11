@@ -10,6 +10,7 @@ import { Subscribe } from "../../modules/subscribe/Subscribe.component";
 import { Florist } from "../../modules/florist/Florist.component";
 import { Pricing } from "../../modules/pricing/Pricing.component";
 import { Testimonials } from "../../modules/testimonials/Testimonials.component";
+import TestimonialSlider from "../../ui/components/slider/TestimonialSlider.component";
 
 export const Home = () => (
   <>
@@ -24,5 +25,6 @@ export const Home = () => (
     <Pricing />
     <Testimonials />
     <Footer />
+    {/*  <TestimonialSlider />*/}
   </>
 );
