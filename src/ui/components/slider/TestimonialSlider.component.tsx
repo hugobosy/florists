@@ -3,14 +3,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Testimonial.css";
 import { Avatar } from "@mui/material";
-import { IoArrowBack, IoArrowForward } from "react-icons/io5";
+import { testimonials } from "../../../data/testimonials";
+import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 const PreviousBtn = (props: any) => {
   console.log(props);
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
-      <IoArrowBack style={{ color: "gray", fontSize: "45px" }} />
+      <MdChevronLeft style={{ color: "gray", fontSize: "45px" }} />
     </div>
   );
 };
@@ -18,7 +19,7 @@ const NextBtn = (props: any) => {
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
-      <IoArrowForward style={{ color: "gray", fontSize: "45px" }} />
+      <MdChevronRight style={{ color: "gray", fontSize: "45px" }} />
     </div>
   );
 };
@@ -30,16 +31,14 @@ export const TestimonialSlider = () => {
     >
       <div style={{ width: "50%", textAlign: "center" }}>
         <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots>
-          <Card img="https://www.tutorialrepublic.com/examples/images/clients/1.jpg" />
-          <Card img="https://www.tutorialrepublic.com/examples/images/clients/2.jpg" />
-          <Card img="https://www.tutorialrepublic.com/examples/images/clients/3.jpg" />
+          {testimonials.map(({testimonial, avatar, author}) => <Card img={avatar} testimonial={testimonial} name={author} />)}
         </Slider>
       </div>
     </div>
   );
 };
 
-const Card = ({ img }: any) => {
+const Card = ({ img, testimonial, name }: any) => {
   return (
     <div
       style={{
@@ -62,13 +61,10 @@ const Card = ({ img }: any) => {
         }}
       />
       <p>
-        Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia.
-        Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan
-        tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt
-        fringilla massa. Etiam hendrerit dolor eget rutrum
+        {testimonial}
       </p>
       <p style={{ fontStyle: "italic", marginTop: 25 }}>
-        <span style={{ fontWeight: 500, color: "green" }}>PAULA WILSON</span> ,
+        <span style={{ fontWeight: 500, color: "green" }}>{name}</span> ,
         Media Analyst
       </p>
     </div>
