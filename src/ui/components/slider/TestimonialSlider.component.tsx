@@ -7,11 +7,10 @@ import { testimonials } from "../../../data/testimonials";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 const PreviousBtn = (props: any) => {
-  console.log(props);
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
-      <MdChevronLeft style={{ color: "gray", fontSize: "45px" }} />
+      <MdChevronLeft style={{ color: "white", fontSize: "45px" }} />
     </div>
   );
 };
@@ -19,7 +18,7 @@ const NextBtn = (props: any) => {
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
-      <MdChevronRight style={{ color: "gray", fontSize: "45px" }} />
+      <MdChevronRight style={{ color: "white", fontSize: "45px" }} />
     </div>
   );
 };
@@ -30,8 +29,20 @@ export const TestimonialSlider = () => {
       style={{ display: "flex", justifyContent: "center", marginTop: 50 }}
     >
       <div style={{ width: "50%", textAlign: "center" }}>
-        <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots>
-          {testimonials.map(({testimonial, avatar, author}) => <Card img={avatar} testimonial={testimonial} name={author} />)}
+        <Slider
+          prevArrow={<PreviousBtn />}
+          nextArrow={<NextBtn />}
+          dots={true}
+          pauseOnHover={true}
+          infinite={true}
+          speed={1000}
+          autoplaySpeed={3000}
+          slidesToShow={1}
+          slidesToScroll={1}
+          autoplay={true}
+        >
+          {testimonials.map(({ testimonial, avatar, author }) => <Card img={avatar} testimonial={testimonial}
+                                                                       name={author} />)}
         </Slider>
       </div>
     </div>
@@ -46,7 +57,7 @@ const Card = ({ img, testimonial, name }: any) => {
         alignItems: "center",
         flexDirection: "column",
         textAlign: "center",
-        color: "gray",
+        color: "#fefefe"
       }}
     >
       <Avatar
@@ -55,17 +66,16 @@ const Card = ({ img, testimonial, name }: any) => {
         style={{
           width: 120,
           height: 120,
-          border: "1px solid lightgray",
+          border: "1px solid #fff",
           padding: 7,
-          marginBottom: 20,
+          marginBottom: 20
         }}
       />
-      <p>
+      <p style={{ fontSize: "12px" }}>
         {testimonial}
       </p>
-      <p style={{ fontStyle: "italic", marginTop: 25 }}>
-        <span style={{ fontWeight: 500, color: "green" }}>{name}</span> ,
-        Media Analyst
+      <p style={{ marginTop: 25 }}>
+        <span style={{ color: "#fff", fontSize: "12px", fontFamily: "serif" }}>{name}</span>
       </p>
     </div>
   );

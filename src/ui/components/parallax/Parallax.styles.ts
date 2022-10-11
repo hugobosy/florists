@@ -8,7 +8,7 @@ const Parallax = styled.div<Partial<ParallaxTypes>>`
   justify-content: center;
   align-items: center;
   min-height: 300px;
-  padding: 30px;
+  padding: 60px;
   ${({ image }) => image && css`
     background: url(${image}) no-repeat fixed center;
     background-size: cover;
