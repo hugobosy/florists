@@ -27,7 +27,7 @@ export const SliderCard: React.FC<SliderCardTypes> = ({ img, testimonial, name }
         {testimonial}
       </p>
       <p style={{ marginTop: 25 }}>
-        <span style={{ color: "#fff", fontSize: "12px", fontFamily: "serif" }}>{name}</span>
+        {name}
       </p>
     </div>
   );

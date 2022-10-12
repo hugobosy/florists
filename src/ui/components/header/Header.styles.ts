@@ -50,22 +50,26 @@ const colors = {
 
 const aligns = {
   left: css`
-    text-align: left;
+    justify-content: left;
   `,
   center: css`
-    text-align: center;
+    justify-content: center;
   `,
   right: css`
-    text-align: right;
+    justify-content: right;
   `
 };
+
+const Wrapper = styled.div<Partial<HeaderTypes>> `
+  display: flex;
+  ${({ align }) => align && aligns[align]};
+`
 
 const Header = styled.h1<Partial<HeaderTypes>>`
   font-family: ${({ theme }) => theme.font.family.secondary};
   text-transform: uppercase;
   ${({ color }) => color && colors[color]};
-  ${({ align }) => align && aligns[align]};
   ${({ size }) => size && sizes[size]};
 `;
 
-export default { Header };
+export default { Wrapper, Header };

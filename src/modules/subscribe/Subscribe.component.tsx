@@ -10,7 +10,7 @@ export const Subscribe = () => (
   <Parallax image={image}>
     <Container>
       <S.Wrapper>
-        <Header captionId="Subscribe to our newsletter" size="small" color="extra-light" align="center" />
+        <Header captionId="Subscribe to our newsletter" size="small" color="light" align="center" />
         <Input type="email" placeholder="Enter Your Email *" />
         <Button captionId="Subscribe" align="center" />
       </S.Wrapper>

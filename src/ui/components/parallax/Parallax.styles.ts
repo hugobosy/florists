@@ -12,6 +12,7 @@ const Parallax = styled.div<Partial<ParallaxTypes>>`
   ${({ image }) => image && css`
     background: url(${image}) no-repeat fixed center;
     background-size: cover;
+    z-index: -2;
   `};
 
   ${({ isBackground }) => isBackground && css`
@@ -23,7 +24,7 @@ const Parallax = styled.div<Partial<ParallaxTypes>>`
       background: linear-gradient(to bottom, rgba(0, 0, 0, .65) 30%, transparent 100%);
       width: 100%;
       height: 100%;
-      z-index: 0;
+      z-index: -1;
     }
   `}
 
