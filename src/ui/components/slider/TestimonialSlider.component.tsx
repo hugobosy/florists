@@ -1,38 +1,19 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Testimonial.css";
-import { Avatar } from "@mui/material";
 import { testimonials } from "../../../data/testimonials";
-import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import { NextBtn } from "./next-btn/NextBtn.component";
+import { PrevBtn } from "./prev-btn/PrevBtn.component";
+import { SliderCard } from "./slider-card/SliderCard.component";
+import S from './TestimonialSlider.styles';
 
-const PreviousBtn = (props: any) => {
-  const { className, onClick } = props;
-  return (
-    <div className={className} onClick={onClick}>
-      <MdChevronLeft style={{ color: "white", fontSize: "45px" }} />
-    </div>
-  );
-};
-const NextBtn = (props: any) => {
-  const { className, onClick } = props;
-  return (
-    <div className={className} onClick={onClick}>
-      <MdChevronRight style={{ color: "white", fontSize: "45px" }} />
-    </div>
-  );
-};
 export const TestimonialSlider = () => {
   return (
-    <div
-      className="testimonial"
-      style={{ display: "flex", justifyContent: "center", marginTop: 50 }}
-    >
+    <S.Wrapper>
       <div style={{ width: "50%", textAlign: "center" }}>
         <Slider
-          prevArrow={<PreviousBtn />}
+          prevArrow={<PrevBtn />}
           nextArrow={<NextBtn />}
-          dots={true}
           pauseOnHover={true}
           infinite={true}
           speed={1000}
@@ -41,44 +22,17 @@ export const TestimonialSlider = () => {
           slidesToScroll={1}
           autoplay={true}
         >
-          {testimonials.map(({ testimonial, avatar, author }) => <Card img={avatar} testimonial={testimonial}
-                                                                       name={author} />)}
+          {
+            testimonials
+              .map(({ testimonial, avatar, author }) =>
+                <SliderCard img={avatar} testimonial={testimonial} name={author} />)
+          }
         </Slider>
       </div>
-    </div>
+    </S.Wrapper>
   );
 };
 
-const Card = ({ img, testimonial, name }: any) => {
-  return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        flexDirection: "column",
-        textAlign: "center",
-        color: "#fefefe"
-      }}
-    >
-      <Avatar
-        imgProps={{ style: { borderRadius: "50%" } }}
-        src={img}
-        style={{
-          width: 120,
-          height: 120,
-          border: "1px solid #fff",
-          padding: 7,
-          marginBottom: 20
-        }}
-      />
-      <p style={{ fontSize: "12px" }}>
-        {testimonial}
-      </p>
-      <p style={{ marginTop: 25 }}>
-        <span style={{ color: "#fff", fontSize: "12px", fontFamily: "serif" }}>{name}</span>
-      </p>
-    </div>
-  );
-};
+
 
 export default TestimonialSlider;
