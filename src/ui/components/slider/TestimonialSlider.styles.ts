@@ -3,7 +3,8 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin: 50px auto 0;
+  max-width: 1600px;
   
   .slick-arrow.slick-prev,
   .slick-arrow.slick-next {

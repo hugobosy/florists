@@ -1,17 +1,10 @@
 import { Avatar } from "@mui/material";
 import { SliderCardTypes } from "./SliderCard.types";
+import S from './SliderCard.styles';
 
 export const SliderCard: React.FC<SliderCardTypes> = ({ img, testimonial, name }) => {
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        flexDirection: "column",
-        textAlign: "center",
-        color: "#fefefe"
-      }}
-    >
+    <S.Wrapper>
       <Avatar
         imgProps={{ style: { borderRadius: "50%" } }}
         src={img}
@@ -23,12 +16,12 @@ export const SliderCard: React.FC<SliderCardTypes> = ({ img, testimonial, name }
           marginBottom: 20
         }}
       />
-      <p style={{ fontSize: "12px" }}>
+      <S.Testimonial>
         {testimonial}
-      </p>
-      <p style={{ marginTop: 25 }}>
+      </S.Testimonial>
+      <S.Author>
         {name}
-      </p>
-    </div>
+      </S.Author>
+    </S.Wrapper>
   );
 };
