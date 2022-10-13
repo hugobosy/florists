@@ -7,7 +7,6 @@ const colors = {
   light: css`
     color: ${({ theme }) => theme.color.light};`,
   "extra-light": css`
-    color: ${({ theme }) => theme.color.light};
   `
 };
 
