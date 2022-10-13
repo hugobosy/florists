@@ -10,7 +10,7 @@ import { Subscribe } from "../../modules/subscribe/Subscribe.component";
 import { Florist } from "../../modules/florist/Florist.component";
 import { Pricing } from "../../modules/pricing/Pricing.component";
 import { Testimonials } from "../../modules/testimonials/Testimonials.component";
-import TestimonialSlider from "../../ui/components/slider/TestimonialSlider.component";
+import { Faq } from "../../modules/faq/Faq.component";
 
 export const Home = () => (
   <>
@@ -24,6 +24,7 @@ export const Home = () => (
     <Florist />
     <Pricing />
     <Testimonials />
+    <Faq />
     <Footer />
     {/*  <TestimonialSlider />*/}
   </>
